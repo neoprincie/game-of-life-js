@@ -1,0 +1,59 @@
+
+body {
+    background-color: #290628;
+    color: #EA7AF4;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', 'Tahoma', 'Sans-Serif';
+}
+
+.title {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#gameControls {
+    margin: 0 10%;
+    text-align: center;
+}
+
+label.gameControl {
+    font-size: large;
+}
+
+table {
+    border-spacing: 0;
+    background-color: #6200B3;
+}
+
+#gameContainer {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+table, tr, td {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border-color: #6200B3;
+    text-align: center;
+}
+
+td,
+td.live,
+td.dead {
+    border-style: solid;
+    border-width: 1px;
+    width: 10px;
+    height: 10px;
+    background-color:#aaa;
+    border-color: #6200B3;
+    border-radius: 3px;
+}
+
+td.live {
+    background-color: #B43E8F;
+}
+
+td.dead {
+    background-color: #aaa;
+}

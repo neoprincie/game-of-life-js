@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="title">
+      <h3 class="title">Conway's Game of Life</h3>
+    </div>
+
+    <div id="gameControls">
+      <label class="gameControl">Number of cells wide:</label
+      ><input id="numberOfCellsWide" type="text" value="50" />
+      <label class="gameControl">Number of cells high:</label
+      ><input id="numberOfCellsHigh" type="text" value="25" />
+      <label class="gameControl">Sparseness(0-100):</label>
+      <input type="range" min="1" max="100" value="50" class="slider" id="sparseness" />
+      <label class="gameControl">Speed(0-100):</label>
+      <input type="range" min="2" max="100" value="5" class="slider" id="speed" />
+
+      <button id="createTableButton" onclick="createTable()">
+        Create Table
+      </button>
+      <button id="startGameButton" onclick="start()">Start</button>
+      <button id="pauseGameButton" onclick="pause()">Pause</button>
+    </div>
+
+    <div id="gameContainer">
+      <div id="gridContainer">
+        <table id="conwayTable">
+          <tr></tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="src/cell.js"></script>
+    <script src="src/conway.js"></script>
+  </body>
+</html>
